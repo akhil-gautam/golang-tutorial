@@ -18,12 +18,13 @@ import "fmt"
 
 // 	complex64 complex128
 
-var (
-	toggle bool
-	id int
-	name string
-	GamaConst complex64
-)
+// when declared as global variables
+// var (
+// 	toggle bool
+// 	id int
+// 	name string
+// 	GamaConst complex64
+// )
 
 func main() {
 	toggle = false
@@ -36,4 +37,9 @@ func main() {
 	fmt.Printf("Type: %T, Value: %v \n", name, name)
 	fmt.Printf("Type: %T, Value: %v \n", GamaConst, GamaConst)
 }
+
+// NOTE: If the variables are by default initialized with Zero values
+// 0 in case of numeric types
+// false for bool
+// "" for strings
 
